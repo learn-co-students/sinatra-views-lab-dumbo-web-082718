@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Today</h1>
+    <% now = Time.now.asctime.split(" ") %>
+    <% month = (Time.now).strftime("%B") %>
+    <% day = Time.now.strftime("%A") %>
+    <p><%= "The date is " + day + ", " + month+" " +now[2]+", "+now[4] %></p>
+  </body>
+</html>
